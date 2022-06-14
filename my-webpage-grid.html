@@ -6,90 +6,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="simple-grid.css">
+
+    
+
     <style>
         .Introd {
             background-image: url(Pictures/IMG_20220612_222837.jpg);
-            
+            height: 18em;
+            display: flex;
         }
 
-
-        table,
-        th,
-        td {
-            border: 1px solid;
+        table, th, td {
+            border: 2px solid;
+            
+           
         }
 
         table {
             border-collapse: collapse;
-            width: 95;
         }
 
-        @Media (min-width: 750px) {
+        @media (min-width: 750px) {
+
+            .Subjects {
+                display: inline-block;
+            }
             .Place {
                 display: inline-block;
-                border-radius: 4em;
-                padding: 3em;
             }
         }
-
-        .Intro {
-            display: flex;
-            padding-left: 23em;
+        .Place {
+            margin: 1em;
+            
+        }    
+        .Subjects {
+            margin: 1em;
         }
-
         .MyPhoto {
-            display: flex;
-            padding-left: 18em;
+        display: flex;
+        
+        
         }
-
+        
         .MyName {
             display: flex;
-            margin: 5em;
+            margin-right: 10em;
+            padding-top: 5em;
         }
-
-.ForeignLanguage {
-
-            padding-left: 23em;
-            margin-top: 5em;
-        }
-
-        .City {
-            display: flex;
-            padding-left: 23em;
-            margin-top: 5em;
-        }
-
-        
-
         .CityPhoto {
             display: flex;
-            padding-left: 23em;
+            
 
         }
 
         .WhichCity {
             display: flex;
-            margin: 5em;
+            margin: 2em;
 
         }
-
-        .Fav.Subject {
-            display: flex;
-            margin: 5em;
-        }
-
-        .Subjects {
-            
-            float: left;
-            width: 25%;
-}
-
-        .Hist.Places {
-            padding-left: 23em;
-            margin-top: 5em;
-
-
-        }
+        
     </style>
 
 </head>
@@ -109,7 +85,7 @@
 
                 <h1>Lehlogonolo David Molatodi</h1>
             </div>
-            <img src="Pictures/IMG_20200507_184224(1).jpg" width="200" alt="">
+            <img src="Pictures/IMG_20200507_184224(1).jpg " width="200" alt="">
 
         </div>
     </div>
@@ -117,48 +93,50 @@
 
 
     <div class="City">
-        <h2>Which City: Giza (Egypt)</h2>
+        <h2>Favorite City: Giza (Egypt)</h2>
     </div>
 
     <div class="CityPhoto">
-        <img src="pictures/giza_egypy-09062022-0001.jpg" width="200" alt="">
+        <img src="Pictures/IMG_20220613_125223.jpg" width="200" height="190" alt="">
 
         <div class="WhichCity">
-            <h4>I would like to visit Giza in Egypt, because it is a home to iconic Egyptian monuments, like the
+            <h4>I would like to visit Giza in Egypt,
+                because it is a home to iconic Egyptian monuments, like the
                 three pyramids built as royal mausoleums around the 26th century BC</h4>
         </div>
     </div>
 
 
     <div class="ForeignLanguage">
-        <h2>ForeignLanguages</h2>
+        <h2>Foreign Language that i would like to learn:</h2>
+        <h3>-I would like to learn Hebrew to enhance my skills and my cultural awareness</h3>
 
         <table>
             <tr>
-                <th>Foreign Language</th>
+                <th>Foreign Phrases (Hebrew)</th>
                 <th>English Meaning</th>
             </tr>
             <tr>
-                <th>Toda (Hebrew)</th>
+                <th>Todah</th>
                 <th>Thank You</th>
 
             </tr>
 
             <tr>
-                <th>Misaotra (Magalasy)</th>
-                <th>Thank You</th>
+                <th>Ta'amin be'atsmecha</th>
+                <th>Believe in yourself</th>
 
             </tr>
 
             <tr>
-                <th>Wazviita (Shona</th>
-                <th>Thank You</th>
+                <th>Hamshech kach</th>
+                <th>Keep up the good Work</th>
 
             </tr>
 
             <tr>
-                <th> Zikomo (Chewa)</th>
-                <th>Thank You</th>
+                <th> ata yachol la'asot zot</th>
+                <th>You can do it</th>
 
             </tr>
 
@@ -168,58 +146,55 @@
 
 
     <div class="Fav.Subject">
+        <h2> Qualification Completed: BSc, Chemistry and Physics (UniLim)</h2>
+        <h2>Favourate Subjects</h2>
 
         <div class="Subjects">
-            <h2> BSc(UniLim)</h2>
-            <h2>Favourate Subject</h2>
             <h3> Full Stack Wed Development</h3>
             <div>
-                <img src="Pictures/IMG_20220610_163616.jpg" width="150" alt="">
+                <img src="Pictures/IMG_20220610_163616.jpg" width="170" alt="">
             </div>
         </div>
 
         <div class="Subjects">
             <h3> Coding Bootcamp</h3>
             <div>
-                <img src="Pictures/fullstackwebdeveloper-10062022-0001.jpg" width="150" alt="">
+                <img src="Pictures/fullstackwebdeveloper-10062022-0001.jpg" width="112" alt="">
             </div>
         </div>
 
         <div class="Subjects">
             <h3> Agile Rapid Skills</h3>
             <div>
-                <img src="Pictures/IMG_20220610_163305.jpg" width="150" alt="">
+                <img src="Pictures/IMG_20220610_163305.jpg" width="195" alt="">
             </div>
         </div>
     </div>
 
 
-
-    <div class="Place1">
+    <div class="Histp"></div>
         <h2>Historic Places</h2>
+        
+
+    <div class="Place">
         <h3>Monte Casino</h3>
         <img src="Pictures/IMG_20220612_094234.jpg" width="150" alt="">
-        <p>Hotels, Entertainment(Cinema,Gaming, Casino)</p>
+        <p>Hotels and Entertainment</p>
 
     </div>
 
-    <div class="Place2" style="left:7em ;">
+    <div class="Place">
         <h3>Soweto Towers</h3>
-        <img src="Pictures/IMG_20220610_165721.jpg" width="150" alt="">
+        <img src="Pictures/IMG_20220610_165721.jpg" width="217" alt="">
         <p> Bunjee Jumping</p>
     </div>
 
-    <div class="Place3">
+    <div class="Place">
         <h3>Joburg Zoo</h3>
-        <img src="Pictures/joburgparkszoo-10062022-0001.jpg" width="150" alt="">
+        <img src="Pictures/joburgparkszoo-10062022-0001.jpg" width="195" alt="">
         <p>Wild Life</p>
     </div>
-
-
-
-
-
-
+    </div>
 
     </div>
 
